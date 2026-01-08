@@ -173,3 +173,20 @@ body {
     from { background-position: 0 0; }
     to { background-position: 0 1500px; }
 }
+
+
+
+
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background-color: #0b0f0a; /* mismo tono que tu fondo */
+  overscroll-behavior: none;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
