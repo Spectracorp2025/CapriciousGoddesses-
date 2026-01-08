@@ -1,21 +1,20 @@
 :root {
-  --fondo:#050b18;
-  --panel:#0c1e3d;
-  --texto:#e6f0ff;
-  --suave:#b7d7ff;
-  --acento:#7fbaff;
-  --magia:#a6c8ff;
+  --fondo:#0b0f0a;        /* noche bosque */
+  --panel:#1a2416;       /* verde piedra */
+  --texto:#e8e3d5;       /* pergamino claro */
+  --suave:#cfc7a5;       /* papel antiguo */
+  --acento:#c9a44b;      /* dorado viejo */
+  --magia:#9fd3a5;       /* verde mágico suave */
 }
 
 body {
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
   background:
-    linear-gradient(rgba(5,10,25,0.9), rgba(2,5,15,0.95)),
+    linear-gradient(rgba(8,12,6,0.92), rgba(5,8,4,0.96)),
     url('fondo.png') center/cover fixed;
   color: var(--texto);
 }
-
 /* ===== Contenedor lectura ===== */
 .lectura {
   max-width: 880px;
@@ -32,12 +31,16 @@ body {
   margin: 30px 0 40px;
   font-family: 'Uncial Antiqua', serif;
   text-align: center;
-  color: var(--magia);
-  text-shadow: 0 0 12px rgba(120,170,255,0.5);
+  color: var(--acento);
+  text-shadow: 0 0 14px rgba(201,164,75,0.6);
 }
 
 .titulo-capitulo .linea1 { font-size: 2.7rem; letter-spacing: 2px; }
-.titulo-capitulo .linea2 { font-size: 2.4rem; letter-spacing: 4px; color: #dceaff; }
+.titulo-capitulo .linea2 { 
+  font-size: 2.4rem; 
+  letter-spacing: 4px; 
+  color: #efe2b3; 
+}
 
 /* ===== Texto ===== */
 p {
@@ -46,69 +49,37 @@ p {
   font-size: 1.25rem;
 }
 
-.narrador { color: #cdd6e5; }
-.prota { color: #ffffff; }
-.pensamiento { color: #c4c9d6; font-style: italic; }
-.voz { color: #8fd0ff; }
-.efecto { text-align: center; color: #777; letter-spacing: 2px; }
-
-
-.locutor {
-  color: #fff3a0; /* amarillo claro */
+.narrador { color: #d8d1b0; }        /* narrador pergamino */
+.prota { color: #f1e6c8; }           /* protagonista dorado pálido */
+.pensamiento { color: #bfb7a1; font-style: italic; }
+.voz {
+  color: #f2a1c2; /* rosa etéreo */
+  text-shadow: 0 0 8px rgba(242,161,194,0.5);
 }
+.efecto { text-align: center; color: #7a745f; letter-spacing: 2px; }
 
-.audiencia {
-  color: #3cff6a; /* verde */
-}
+.locutor { color: #d6b96a; }
+.audiencia { color: #88c98f; }
+.oponente { color: #cfa14a; }
 
-.oponente {
-  color: #ffd700; /* amarillo */
-}
+.desconocidas { color: #9fcfbf; }
 
-.desconocidas {
-  color: #8fdcff; /* azul claro cielo */
-}
+.desconocida1 { color: #cfa96f; }
+.desconocida2 { color: #b89b6a; }
+.desconocida3 { color: #9c7ccf; }
+.desconocida4 { color: #7fa6cf; }
+.desconocida5 { color: #d48ab5; }
 
-
-.desconocida1 {
-  color: #ffb347; /* naranja claro */
-}
-
-.desconocida2 {
-  color: #c8a26e; /* café claro */
-}
-
-.desconocida3 {
-  color: #8a2be2; /* morado */
-}
-
-.desconocida4 {
-  color: #3b82f6; /* azul */
-}
-
-.desconocida5 {
-  color: #ff7eb9; /* rosado */
-}
-
-.guardia {
-  color: #7dff9f; /* verde claro */
+.guardia { color: #9fce8a; }
 }
 
 .keiko {
-  color: #3b82f6; /* azul */
+  color: #3b82f6;
 }
 
 .fumiko {
-  color: #ff5fa2; /* rosado */
+  color: #ff5fa2;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -180,11 +151,11 @@ p {
 }
 
 .modal-box {
-  background: linear-gradient(160deg, #0e2145, #09172f);
+  background: linear-gradient(160deg, #1c2416, #0f140c);
   padding: 38px 32px;
   border-radius: 22px;
-  border: 1px solid rgba(140,190,255,0.5);
-  box-shadow: 0 0 35px rgba(120,170,255,0.6);
+  border: 1px solid rgba(201,164,75,0.5);
+  box-shadow: 0 0 35px rgba(201,164,75,0.4);
   max-width: 440px;
   text-align: center;
 }
@@ -196,25 +167,24 @@ p {
 }
 
 /* ===== Botón ===== */
-#aceptar {
+##aceptar {
   margin-top: 26px;
   padding: 14px 36px;
   border-radius: 30px;
   border: none;
-  background: linear-gradient(135deg, #2a5fff, #7fbaff);
-  color: white;
+  background: linear-gradient(135deg, #8c6a2a, #d6b96a);
+  color: #2b1c05;
   cursor: pointer;
   font-weight: bold;
   letter-spacing: 1px;
-  box-shadow: 0 0 20px rgba(120,170,255,0.6);
+  box-shadow: 0 0 20px rgba(201,164,75,0.6);
   transition: transform .3s ease, box-shadow .3s ease;
 }
 
 #aceptar:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 35px rgba(160,210,255,0.9);
+  box-shadow: 0 0 35px rgba(230,200,120,0.9);
 }
-
 /* ===== Progreso ===== */
 #progreso {
   position: fixed;
@@ -226,3 +196,33 @@ p {
   box-shadow: 0 0 10px rgba(180,200,255,0.8);
   z-index: 200;
 }
+
+
+button#aceptar,
+#aceptar {
+  background: linear-gradient(135deg, #8c6a2a, #d6b96a) !important;
+  color: #2b1c05 !important;
+  border: none !important;
+  border-radius: 30px !important;
+  padding: 14px 36px !important;
+  font-weight: bold !important;
+  letter-spacing: 1px !important;
+  box-shadow: 0 0 20px rgba(201,164,75,0.6) !important;
+}
+
+button#aceptar:hover,
+#aceptar:hover {
+  transform: scale(1.08) !important;
+  box-shadow: 0 0 35px rgba(230,200,120,0.9) !important;
+}
+
+
+.fumiko {
+  color: #ff5fa2 !important;
+  font-weight: 500;
+}
+
+.keiko,
+p.keiko {
+  color: #3b82f6 !important;
+    }
