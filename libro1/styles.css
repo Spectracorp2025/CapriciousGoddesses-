@@ -228,3 +228,20 @@ footer {
   85% { opacity:0.6; }
   90% { opacity:0; }
 }
+
+
+
+
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background-color: #0b0f0a; /* mismo tono que tu fondo */
+  overscroll-behavior: none;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
