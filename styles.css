@@ -1,0 +1,175 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'IM Fell English', serif;
+    background:
+        linear-gradient(rgba(40,25,5,0.75), rgba(10,5,0,0.85)),
+        url('fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #f5e6c8;
+    text-align: center;
+}
+
+.contenedor {
+    padding: 30px 20px 50px;
+}
+
+.titulo {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(32px, 6vw, 48px);
+    margin: 20px 0 30px;
+    text-shadow: 0 0 15px #d4af37;
+}
+
+.zona-libros {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.libro {
+    background: rgba(30, 18, 10, 0.92);
+    border: 2px solid #d4af37;
+    border-radius: 18px;
+    padding: 26px 22px;
+    width: 260px;
+    box-shadow: 0 0 25px rgba(212,175,55,0.45);
+    position: relative;
+}
+
+.portada-libro {
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(212,175,55,0.6);
+    margin-bottom: 10px;
+}
+
+.boton {
+    margin-top: 10px;
+    padding: 10px 26px;
+    border-radius: 22px;
+    background: linear-gradient(45deg, #b08d2a, #ffd86b);
+    border: none;
+    color: #2b1a0f;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(212,175,55,0.7);
+}
+
+.proximo {
+    opacity: 0.6;
+    filter: grayscale(0.4);
+}
+
+.sello {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    background: #d4af37;
+    color: #2b1a0f;
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 20px;
+    transform: rotate(12deg);
+    box-shadow: 0 0 10px rgba(212,175,55,0.8);
+}
+
+.mensaje {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ff8a8a;
+}
+
+/* Creador */
+
+.creador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    background: rgba(20, 12, 6, 0.85);
+    padding: 18px 24px;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(212,175,55,0.4);
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 78px;
+    height: 78px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 12px rgba(212,175,55,0.8);
+}
+
+.whatsapp {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 8px 22px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #1ebd5a, #4dff8a);
+    color: #0e0703;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(77,255,138,0.8);
+}
+
+.precio {
+    color: #8fffad;
+    font-size: 13px;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-contenido {
+    background: rgba(30,18,10,0.95);
+    padding: 35px 32px;
+    border-radius: 20px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 35px rgba(212,175,55,0.6);
+    max-width: 420px;
+}
+
+.boton-modal {
+    margin-top: 16px;
+    padding: 10px 28px;
+    border-radius: 24px;
+    background: linear-gradient(45deg, #b08d2a, #ffd86b);
+    border: none;
+    color: #2b1a0f;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(212,175,55,0.8);
+}
+
+.particulas {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(255,215,150,0.8) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: flotarParticulas 30s linear infinite;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+@keyframes flotarParticulas {
+    from { background-position: 0 0; }
+    to { background-position: 0 1500px; }
+}

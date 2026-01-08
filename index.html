@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Capricious Goddesses</title>
+    <link rel="icon" href="icono.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Cinzel:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="particulas"></div>
+<div id="terminos" class="modal">
+    <div class="modal-contenido">
+        <h2>Bienvenido a la saga Capricious Goddesses</h2>
+        <p>Aquí encontrarás los libros disponibles.</p>
+        <p>Necesitarás la clave de compra para desbloquear cada uno.</p>
+        <p>Al continuar aceptas la música ambiental.</p>
+        <button id="aceptar" class="boton-modal">Entrar</button>
+    </div>
+</div>
+
+<audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<div class="contenedor">
+
+    <h1 class="titulo">Capricious Goddesses</h1>
+
+    <div class="zona-libros">
+
+        <div class="libro">
+            <img src="libro1.png" class="portada-libro">
+            <h2>Alas de Ceniza</h2>
+            <button class="boton" id="desbloquear">Desbloquear</button>
+            <p id="mensaje" class="mensaje"></p>
+        </div>
+
+        <div class="libro proximo">
+            <div class="sello">Próximamente</div>
+            <h2>Libro II</h2>
+            <p>En preparación...</p>
+        </div>
+
+    </div>
+
+    <div class="creador">
+        <img src="nekoltd.jpg" class="logo">
+        <div>
+            <p><strong>NekoLTD</strong></p>
+            <p>Creadores digitales y narrativos.</p>
+            <p>Para conseguir una clave:</p>
+            <a href="https://wa.me/+573009555880" class="whatsapp">Contactar por WhatsApp</a>
+            <p class="precio">Precio económico y accesible 💚</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
